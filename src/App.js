@@ -8,8 +8,8 @@ function App() {
         <h1>
           Weather App
         </h1>
+        <SearchEngine />
       </header>
-      <SearchEngine />
     </div>
   );
 }
