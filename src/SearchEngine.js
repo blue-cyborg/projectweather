@@ -4,7 +4,7 @@ import axios from "axios";
 export default function SearchEngine() {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState({}); 
 
   function displayWeather(response) {
     setLoaded(true);
@@ -40,6 +40,7 @@ export default function SearchEngine() {
           placeholder="Enter your City..."
         />
         <input className="button" type="submit" value="Search" />
+        <input className="current" type="submit" value="My Location 📍" />
       </form>
     </div>
   );
@@ -53,6 +54,8 @@ export default function SearchEngine() {
             The temperature in {weather.city} is {Math.round(weather.temp)}°F
           </li>
           <li>However, it feels like {Math.round(weather.feel)}°F</li>
+          <li>The high for today is x</li> 
+          <li>the low for today is x</li>
           <li>Wind: {Math.round(weather.wind)}km/h</li>
           <li>Humidity: {Math.round(weather.humidity)}%</li>
           <li>The conditions are: {weather.description}</li>

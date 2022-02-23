@@ -1,4 +1,5 @@
 import SearchEngine from "./SearchEngine";
+import Timestamp from "./Timestamp"
 import './App.css';
 
 function App() {
@@ -8,10 +9,32 @@ function App() {
         <h1>
           Weather Forecast
         </h1>
-        <h2>Find the forecast in your city</h2>
-        <SearchEngine />
+        <h2 className="subtitle">Find the forecast in your city</h2>
       </header>
-      <p>Open source code coded by Candice Drave</p>
+      <div className="SearchEngine">
+      <SearchEngine />
+      </div>
+      <footer>
+        <Timestamp />
+      <div className="d-flex justify-content-center">
+          <p>
+            <span role="img" aria-label="robot">
+              🤖
+            </span>
+            Open source code
+            <a
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {""} made by Candice Drave
+              <span role="img" aria-label="robot">
+                🤖
+              </span>
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
