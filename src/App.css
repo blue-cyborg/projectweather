@@ -2,8 +2,38 @@
   text-align: center;
 }
 
+a:link {
+  color: #ef8c99;
+}
+a:visited {
+  color: #ef8c99;
+}
+
 body {
   background-color: #252742;
+}
+
+footer {
+  background-color: #864dd9;
+  color: whitesmoke;
+  margin-top: 3px;
+}
+
+h1,
+h2 {
+  color: #cf53f9;
+}
+
+h1 {
+  font-size: 68px;
+}
+
+ul {
+  list-style-type: none;
+  color: #ef8c99;
+  font-size: 19px;
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 .SearchEngine {
@@ -17,29 +47,6 @@ body {
   background-color: #7127ac;
   border: solid 3px #ef8c99;
   color: wheat;
-}
-
-h1,
-h2 {
-  color: #cf53f9;
-}
-
-h1 {
-  font-size: 68px;
-}
-
-footer {
-  background-color: #864dd9;
-  color: whitesmoke;
-  margin-top: 3px;
-}
-
-ul {
-  list-style-type: none;
-  color: whitesmoke;
-  font-size: 19px;
-  list-style-position: inside;
-  padding-left: 0;
 }
 
 .subtitle {
