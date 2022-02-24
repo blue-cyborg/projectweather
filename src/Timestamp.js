@@ -1,7 +1,16 @@
 import React from "react";
 
-export default function Timestamp() {
-    return(
-    <p>Your current date and time is</p>
+class Timestamp extends React.Component {
+  state={
+    curDT : new Date().toLocaleString(),
+  }
+  render(){
+    return (
+      <div className="App">
+        <p>Your Current Date And Time is {this.state.curDT}</p>
+      </div>
     );
+  }
 }
+ 
+export default Timestamp;
