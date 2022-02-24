@@ -14,6 +14,8 @@ export default function SearchEngine() {
       feel: response.data.main.feels_like,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      high: response.data.main.temp_max,
+      low: response.data.main.temp_min,
       description: response.data.weather[0].description,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
@@ -54,8 +56,8 @@ export default function SearchEngine() {
             The temperature in {weather.city} is {Math.round(weather.temp)}°F
           </li>
           <li>However, it feels like {Math.round(weather.feel)}°F</li>
-          <li>The high for today is x</li> 
-          <li>the low for today is x</li>
+          <li>The high for today is {Math.round(weather.high)}°F</li> 
+          <li>the low for today is {Math.round(weather.low)}°F</li>
           <li>Wind: {Math.round(weather.wind)}km/h</li>
           <li>Humidity: {Math.round(weather.humidity)}%</li>
           <li>The conditions are: {weather.description}</li>
