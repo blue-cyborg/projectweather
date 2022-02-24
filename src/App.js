@@ -23,7 +23,7 @@ function App() {
             </span>
             Open source code
             <a
-              href="/"
+              href="https://github.com/blue-cyborg/projectweather"
               target="_blank"
               rel="noreferrer"
             >
