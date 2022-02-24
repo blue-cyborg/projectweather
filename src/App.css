@@ -12,6 +12,7 @@ body {
 
 .Searchbar {
   height: 40px;
+  width: 500px;
   font-size: 30px;
   background-color: #7127ac;
   border: solid 3px #ef8c99;

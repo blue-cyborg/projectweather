@@ -39,10 +39,11 @@ export default function SearchEngine() {
           className="Searchbar"
           type="search"
           onChange={updateCity}
-          placeholder="Enter your City..."
+          placeholder="Enter your City or Zip Code..."
         />
         <input className="button" type="submit" value="Search" />
         <input className="current" type="submit" value="My Location 📍" />
+        
       </form>
     </div>
   );
